@@ -1,0 +1,15 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Friends-Grid             ║ Banner                                                                                  ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+.peopleColumn-29fq28 .userInfo-2zN2z8::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-image: var(--user-banner);
+    background-position: center;
+    background-color: var(--user-accent-color);
+    background-size: cover;
+  }
+  

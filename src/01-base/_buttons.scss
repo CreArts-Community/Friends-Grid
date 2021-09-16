@@ -1,0 +1,120 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Friends-Grid             ║ Cards (Buttons - Online)                                                                   ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Spacing
+.peopleColumn-29fq28#online-tab .actions-1SQwjn {
+    position: relative;
+    transform: scale(0.8);
+    margin-left: 2px !important;
+    bottom: 4%;
+  }
+  
+  // Background (Normal)
+  .peopleColumn-29fq28#online-tab .actionButton-uPB8Fs {
+    color: var(--interactive-normal);
+    background: var(--background-secondary);
+  }
+  
+  // Background (Hover)
+  .peopleColumn-29fq28#online-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+  .peopleColumn-29fq28#online-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
+    background: var(--background-modifier-selected);
+    color: white;
+  }
+  
+  .peopleColumn-29fq28#online-tab .actionButton-uPB8Fs:hover {
+    background:  var(--user-accent-color) !important;
+    color: white;
+  }
+  
+  // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+  // ║ Friends-Grid             ║ Cards (Buttons - All)                                                                   ║
+  // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+  
+  // Spacing
+  .peopleColumn-29fq28#all-tab .actions-1SQwjn {
+    position: relative;
+    transform: scale(0.8);
+    margin-left: 2px !important;
+    bottom: 4%;
+  }
+  
+  // Background (Normal)
+  .peopleColumn-29fq28#all-tab .actionButton-uPB8Fs {
+    color: var(--interactive-normal);
+    background: var(--background-secondary);
+  }
+  
+  // Background (Hover)
+  .peopleColumn-29fq28#all-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+  .peopleColumn-29fq28#all-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
+    background: var(--background-modifier-selected);
+    color: white;
+  }
+  
+  .peopleColumn-29fq28#all-tab .actionButton-uPB8Fs:hover {
+    background:  var(--user-accent-color) !important;
+    color: white;
+  }
+  
+  // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+  // ║ Friends-Grid             ║ Cards (Buttons - Pending)                                                               ║
+  // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+  
+  // Spacing
+  .peopleColumn-29fq28#pending-tab .actions-FAbeWr {
+    position: relative;
+    transform: scale(0.8);
+    margin-left: 2px !important;
+    bottom: 4%;
+  }
+  
+  // Background (Normal)
+  .peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs {
+    color: var(--interactive-normal);
+    background: var(--background-secondary);
+  }
+  
+  // Background (Hover)
+  .peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+  .peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
+    background: var(--background-modifier-selected);
+    color: white;
+  }
+  
+  .peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs:hover {
+    background:  var(--user-accent-color) !important;
+    color: white;
+  }
+  
+  
+  // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+  // ║ Friends-Grid             ║ Cards (Buttons - Blocked)                                                               ║
+  // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+  
+  // Spacing
+  .peopleColumn-29fq28#pending-tab .actions-FAbeWr {
+    position: relative;
+    transform: scale(0.8);
+    margin-left: 2px !important;
+    bottom: 4%;
+  }
+  
+  // Background (Normal)
+  .peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs {
+    color: var(--interactive-normal);
+    background: var(--background-secondary);
+  }
+  
+  // Background (Hover)
+  .peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+  .peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
+    background: var(--background-modifier-selected);
+    color: white;
+  }
+  
+  .peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs:hover {
+    background:  var(--user-accent-color) !important;
+    color: white;
+  }
