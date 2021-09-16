@@ -3,7 +3,7 @@
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 // Disable now playing
-.nowPlayingColumn-2sl4cE {display: none;}
+//.nowPlayingColumn-2sl4cE {display: none;}
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Friends-Grid             ║ Blur                                                                                    ║
@@ -13,7 +13,10 @@
 // Blur
 .overflow-WK9Ogt,
 .textContent-3N7xXx,
-.username-2b1r56 {
+.username-2b1r56,
+.discriminator-22Okc1,
+.subtext-24R4-w,
+.activity-525YDR {
   color: transparent;
   text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
@@ -65,8 +68,6 @@
   grid-template-columns: auto auto auto;
   grid-column-gap: 12px;
   row-gap: 12px;
-
-
 }
 
 // Add new scrollbar
@@ -112,7 +113,6 @@
   margin: 0px;
   padding: 0px;
   border-top: none;
-  line-height: 0px;
 }
 
 // Card (Hover)
@@ -176,7 +176,9 @@
 // ║ Friends-Grid             ║ Cards (Buttons)                                                                         ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-.peopleColumn-29fq28 .actions-1SQwjn{height: 0%;}
+.peopleColumn-29fq28 .actions-1SQwjn {
+  height: 0%;
+}
 
 .peopleColumn-29fq28 .actionButton-uPB8Fs {
   color: var(--interactive-normal);
@@ -199,7 +201,6 @@
 // ║ Friends-Grid             ║ Reponsive                                                                                 ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-
 /*
 @media screen and (min-width: 0px) and (max-width: 1400px) {
   .peopleColumn-29fq28 .content-3YMskv {grid-template-columns: 1fr 1fr 1fr; }
@@ -213,10 +214,6 @@
   //.peopleListItem-2nzedh:hover .userInfo-2zN2z8 {transform: scale(1.1); left: 0px;}
 }
 */
-
-
-
-
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Friends-Grid             ║ Banner                                                                                  ║
@@ -232,11 +229,3 @@
   background-color: var(--user-accent-color);
   background-size: cover;
 }
-
-
-
-
-
-
-
-
