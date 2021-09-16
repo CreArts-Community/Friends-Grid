@@ -15,7 +15,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 12px;
   row-gap: 12px;
-  height: 100%;
+  height: auto !important;
 }
 
 // Remove Space
@@ -28,12 +28,13 @@
   padding-top: 48px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 // Disable Default Scrollbar
 .peopleColumn-29fq28 .scrollerBase-289Jih {
   overflow: visible !important;
-  margin-bottom: 100%;
+  //margin-bottom: 100%;
 }
 
 // Add new scrollbar
@@ -136,6 +137,7 @@
   transform: scale(1.0);
   width: 100%;
   height: 70%;
+  flex: 0 0 auto;
 }
 
 // Username / Status
@@ -143,7 +145,7 @@
   position: absolute;
   width: 100%;
   left: 20px;
-  bottom: 0px;
+  bottom: 0%;
 }
 
 // Status
