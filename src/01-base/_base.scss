@@ -58,13 +58,13 @@
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   border: 4px solid transparent;
   background-clip: padding-box;
-  border-radius: 8px;
+  border-radius: var(--friends-grid-radius);
 }
 .peopleColumn-29fq28::-webkit-scrollbar-thumb,
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   border: 4px solid transparent;
   background-clip: padding-box;
-  border-radius: 8px;
+  border-radius: var(--friends-grid-radius);
 }
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   background-color: var(--scrollbar-auto-track);
@@ -86,7 +86,7 @@
 // Card (Normal)
 .peopleColumn-29fq28 .peopleListItem-2nzedh {
   background: var(--background-secondary-alt);
-  border-radius: 8px !important;
+  border-radius: var(--friends-grid-radius) !important;
   height: 100% !important;
   margin: 0px;
   padding: 0px;
@@ -145,6 +145,9 @@
   left: 20px;
   bottom: 0px;
 }
+
+// Status
+.peopleColumn-29fq28 .text-3MU_QQ{ width: 80%;}
 
 // Discriminator
 .peopleColumn-29fq28 .discriminator-22Okc1 {
