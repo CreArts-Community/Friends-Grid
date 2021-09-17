@@ -5,8 +5,15 @@
 // Header
 .peopleColumn-29fq28 .title-30qZAO {
   position: absolute;
-  top: -50px;
+  top: -56px;
   left: -28px;
+
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--header-primary);
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 
 // Grid
@@ -25,7 +32,7 @@
 
 // Spacing
 .peopleColumn-29fq28 {
-  padding-top: 48px;
+  padding-top: 56px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -59,13 +66,13 @@
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   border: 4px solid transparent;
   background-clip: padding-box;
-  border-radius: var(--friends-grid-radius);
+  border-radius: var(--friends-card-radius);
 }
 .peopleColumn-29fq28::-webkit-scrollbar-thumb,
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   border: 4px solid transparent;
   background-clip: padding-box;
-  border-radius: var(--friends-grid-radius);
+  border-radius: var(--friends-card-radius);
 }
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   background-color: var(--scrollbar-auto-track);
@@ -86,19 +93,20 @@
 
 // Card (Normal)
 .peopleColumn-29fq28 .peopleListItem-2nzedh {
-  background: var(--background-secondary-alt);
-  border-radius: var(--friends-grid-radius) !important;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-accent);
+  border-radius: var(--friends-card-radius) !important;
   height: 100% !important;
   margin: 0px;
   padding: 0px;
   border-top: none;
-  min-height: 200px;
+  min-height: var(--friends-card-height) !important;
 }
 
 // Card (Hover)
 .peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ,
 .peopleColumn-29fq28 .peopleListItem-2nzedh:hover{
-  background: var(--background-secondary);
+  background: var(--activity-card-background);
 }
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
@@ -108,24 +116,24 @@
 // Avatar
 .peopleColumn-29fq28 .avatar-3W3CeO.wrapper-3t9DeA {
   transform: scale(1.8);
-  margin-left: 30px;
+  margin-left: 36px;
   margin-top: 40px;
 }
 
 // Avatar Mask
 .peopleColumn-29fq28 .avatar-3W3CeO::before {
+  background: var(--background-secondary);
   content: "";
   position: absolute;
   width: 116%;
   height: 116%;
-  background: var(--background-secondary-alt);
   border-radius: 100%;
   left: -8%;
   top: -8%;
 }
 
 .peopleColumn-29fq28 .peopleListItem-2nzedh:hover .avatar-3W3CeO::before {
-  background: var(--background-secondary);
+  background: var(--activity-card-background);
 }
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
@@ -136,22 +144,57 @@
 .peopleColumn-29fq28 .userInfo-2zN2z8 {
   transform: scale(1.0);
   width: 100%;
-  height: 70%;
-  flex: 0 0 auto;
+  height: 100%;
+  margin-bottom: var(--firends-card-margin-bottom);
+}
+
+.peopleColumn-29fq28 .userInfo-3bsjnc {
+  transform: scale(1.0);
+  width: 100%;
+  height: 100%;
+  margin-bottom: var(--firends-card-margin-bottom);
+
+  flex: auto 0 0;
 }
 
 // Username / Status
 .peopleColumn-29fq28 .text-37NqbO {
   position: absolute;
-  width: 100%;
+  width: 80% !important;
   left: 20px;
-  bottom: 0%;
+  bottom: 0;
 }
 
-// Status
-.peopleColumn-29fq28 .text-3MU_QQ{ width: 80%;}
+.peopleColumn-29fq28#pending-tab .text-37NqbO {
+  position: absolute;
+  bottom: 0%;
+  margin-bottom: var(--firends-card-margin-bottom);
+}
 
 // Discriminator
 .peopleColumn-29fq28 .discriminator-22Okc1 {
   visibility: visible;
+  margin-left: 2px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+// Name
+.peopleColumn-29fq28 .nameTag-m8r81H {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.listItemContents-95HL3L {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+
 }

@@ -1,6 +1,6 @@
 /**
  * @name Friends-Grid
- * @version 0.0.7
+ * @version 0.0.8
  * @author CorellanStoma#1996
  * @authorLink https://github.com/CorellanStoma
  * @description WIP
@@ -12,7 +12,7 @@
 /* ║ Theme Settings                                                                                                     ║ */
 /* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Theme:                   ║ Friends-Grid                                                                            ║ */
-/* ║ version:                 ║ 0.0.7                                                                                   ║ */
+/* ║ version:                 ║ 0.0.8                                                                                   ║ */
 /* ║ author:                  ║ CorellanStoma#1996                                                                      ║ */
 /* ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║                                                                                                                    ║ */
@@ -40,7 +40,9 @@
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
 
 :root {
-  --friends-grid-radius: 8px;
+  --friends-card-radius: 8px;
+  --friends-card-height: 180px;
+  --firends-card-margin-bottom: 26px;
   --user-accent-color: var(--brand-experiment);
 }
 

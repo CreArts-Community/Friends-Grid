@@ -1,124 +1,100 @@
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Friends-Grid             ║ Cards (Buttons - Online)                                                                   ║
+// ║ Buttons                  ║ Mixins - Spacing                                                                        ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 // Spacing
-.peopleColumn-29fq28#online-tab .actions-1SQwjn {
-  position: relative;
-  transform: scale(0.9);
-  margin-left: 2px !important;
-  bottom: 4%;
-  margin-right: 6px;
+@mixin cards-spacing($item-id, $class, $bottom, $margin, $scale, $position:"") {
+  .peopleColumn-29fq28##{$item-id} .#{$class} {
+    position: #{$position};
+    transform: scale(#{$scale});
+    margin-left: 2px !important;
+    bottom: #{$bottom};
+    margin-right: -2px;
+    height: 0px;
+    min-height: 0px;
+    max-height: 0px;
+    margin-top: #{$margin};
+  }
 }
 
-// Background (Normal)
-.peopleColumn-29fq28#online-tab .actionButton-uPB8Fs {
-  color: var(--interactive-normal);
-  background: var(--background-secondary);
-}
-
-// Background (Hover)
-.peopleColumn-29fq28#online-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
-.peopleColumn-29fq28#online-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
-  background: var(--background-modifier-selected);
-  color: white;
-}
-
-.peopleColumn-29fq28#online-tab .actionButton-uPB8Fs:hover {
-  background: var(--background-modifier-active) !important;
-  color: white;
-}
+@include cards-spacing(online-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(all-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(pending-tab, actions-FAbeWr, unset, 10px, 0.72, absolute);
+@include cards-spacing(blocked-tab, actionDeny-de_uKj, unset, 10px, 1.0, absolute);
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Friends-Grid             ║ Cards (Buttons - All)                                                                   ║
+// ║ Buttons                  ║ Mixins - Background (Normal)                                                            ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-// Spacing
-.peopleColumn-29fq28#all-tab .actions-1SQwjn {
-  position: relative;
-  transform: scale(0.9);
-  margin-left: 2px !important;
-  bottom: 4%;
-  margin-right: 6px;
-}
-
 // Background (Normal)
-.peopleColumn-29fq28#all-tab .actionButton-uPB8Fs {
-  color: var(--interactive-normal);
-  background: var(--background-secondary);
+@mixin cards-background($item-id) {
+  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs {
+    opacity: 0;
+  }
 }
 
-// Background (Hover)
-.peopleColumn-29fq28#all-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
-.peopleColumn-29fq28#all-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
-  background: var(--background-modifier-selected);
-  color: white;
-}
-
-.peopleColumn-29fq28#all-tab .actionButton-uPB8Fs:hover {
-  background: var(--background-modifier-active) !important;
-  color: white;
-}
+@include cards-background(online-tab);
+@include cards-background(all-tab);
+@include cards-background(pending-tab);
+@include cards-background(blocked-tab);
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Friends-Grid             ║ Cards (Buttons - Pending)                                                               ║
+// ║ Buttons                  ║ Mixins - Background (Hover)                                                             ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-// Spacing
-.peopleColumn-29fq28#pending-tab .actions-FAbeWr {
-  position: relative;
-  transform: scale(0.9);
-  margin-left: 2px !important;
-  bottom: -8% !important;
-  margin-right: 6px;
-}
-
-// Background (Normal)
-.peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs {
-  color: var(--interactive-normal);
-  background: var(--background-secondary);
-}
-
 // Background (Hover)
-.peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
-.peopleColumn-29fq28#pending-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
-  background: var(--background-modifier-selected);
-  color: white;
+@mixin cards-background-hover($item-id) {
+  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+    color: var(--interactive-normal);
+    background: rgba(0, 0, 0, 0.300);
+    color: white;
+    opacity: 1;
+  }
 }
 
-.peopleColumn-29fq28#pending-tab .actionButton-uPB8Fs:hover {
-  background: var(--background-modifier-active) !important;
-  color: white;
+@include cards-background-hover(online-tab);
+@include cards-background-hover(all-tab);
+@include cards-background-hover(pending-tab);
+@include cards-background-hover(blocked-tab);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Button (Hover)                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Button (Hover)
+@mixin cards-button-hover($item-id) {
+  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs:hover {
+    background: rgba(0, 0, 0, 0.600) !important;
+    color: white !important;
+  }
 }
+
+@include cards-button-hover(online-tab);
+@include cards-button-hover(all-tab);
+@include cards-button-hover(pending-tab);
+@include cards-button-hover(blocked-tab);
 
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Friends-Grid             ║ Cards (Buttons - Blocked)                                                               ║
+// ║ Buttons                  ║ General                                                                                 ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
+
 // Spacing
+.actionButton-uPB8Fs{
+  margin-left: 9px;
+}
+
 .peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj {
-  position: relative;
-  transform: scale(0.9);
-  margin-left: 2px !important;
-  bottom: 4%;
-  margin-right: 8px;
+  height: 26px !important;
+  width: 26px !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  margin-right: 10px;
 }
 
-// Background (Normal)
-.peopleColumn-29fq28#blocked-tab .actionButton-uPB8Fs {
-  color: var(--interactive-normal);
-  background: var(--background-secondary);
-}
-
-// Background (Hover)
-.peopleColumn-29fq28#blocked-tab .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
-.peopleColumn-29fq28#blocked-tab .peopleListItem-2nzedh:hover .actionButton-uPB8Fs{
-  background: var(--background-modifier-selected);
-  color: white;
-}
-
-.peopleColumn-29fq28#blocked-tab .actionButton-uPB8Fs:hover {
-  background: var(--background-modifier-active) !important;
-  color: white;
+.peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj .icon-35-fSh{
+  height: 14px !important;
+  width: 14px !important;
 }
