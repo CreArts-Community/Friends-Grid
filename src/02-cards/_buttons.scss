@@ -29,7 +29,9 @@
 // Background (Normal)
 @mixin cards-background($item-id) {
   .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs {
-    opacity: 0;
+    background: var(--FG-cards-button-background-normal);
+    color: var(--FG-cards-button-icon-normal);
+    opacity: var(--FG-cards-button-opacity-normal);
   }
 }
 
@@ -46,10 +48,9 @@
 @mixin cards-background-hover($item-id) {
   .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
   .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
-    color: var(--interactive-normal);
-    background: rgba(0, 0, 0, 0.300);
-    color: white;
-    opacity: 1;
+    background: var(--FG-cards-button-background-hover);
+    color: var(--FG-cards-button-icon-normal);
+    opacity: var(--FG-cards-button-opacity-hover);
   }
 }
 
@@ -59,14 +60,14 @@
 @include cards-background-hover(blocked-tab);
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Buttons                  ║ Mixins - Button (Hover)                                                                 ║
+// ║ Buttons                  ║ Mixins - Icon (Hover)                                                                   ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 // Button (Hover)
 @mixin cards-button-hover($item-id) {
   .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs:hover {
-    background: rgba(0, 0, 0, 0.600) !important;
-    color: white !important;
+    background: var(--FG-cards-button-icon-hover) !important;
+    color:  var(--FG-cards-button-icon-hover);
   }
 }
 
@@ -79,7 +80,6 @@
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Buttons                  ║ General                                                                                 ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
-
 
 // Spacing
 .actionButton-uPB8Fs{

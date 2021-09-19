@@ -1,9 +1,9 @@
 /**
  * @name Friends-Grid
- * @version 0.0.8
+ * @version 1.0.0
  * @author CorellanStoma#1996
  * @authorLink https://github.com/CorellanStoma
- * @description WIP
+ * @description Friends-Grid adds a grid view to the friends list.
  * @source https://github.com/CorellanStoma/Friends-Grid
  * @invite 8w8e39z
 */
@@ -12,11 +12,11 @@
 /* ║ Theme Settings                                                                                                     ║ */
 /* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Theme:                   ║ Friends-Grid                                                                            ║ */
-/* ║ version:                 ║ 0.0.8                                                                                   ║ */
+/* ║ version:                 ║ 1.0.0                                                                                   ║ */
 /* ║ author:                  ║ CorellanStoma#1996                                                                      ║ */
 /* ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║                                                                                                                    ║ */
-/* ║ WIP                                                                                                                ║ */
+/* ║ Friends-Grid adds a grid view to the friends list.                                                                 ║ */
 /* ║ This theme was created by CorellanStoma#1996.                                                                      ║ */
 /* ║                                                                                                                    ║ */
 /* ║ If you need support join our Creative Community:                                                                   ║ */
@@ -40,16 +40,67 @@
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
 
 :root {
-  --friends-card-radius: 8px;
-  --friends-card-height: 180px;
-  --firends-card-margin-bottom: 26px;
-  --user-accent-color: var(--brand-experiment);
+  --FG-cards-radius: 8px;
+  --FG-cards-height: 180px;
+  --FG-cards-margin-bottom: 26px;
+  --FG-cards-banner-background: var(--brand-experiment);
+  --FG-cards-border-width: 1px;
+
+  --FG-cards-username-opacity-normal: 1.0;
+  --FG-cards-username-opacity-hover: 1.0;
+  --FG-cards-discriminator-opacity-normal: 1.0;
+  --FG-cards-discriminator-opacity-hover: 1.0;
+  --FG-cards-status-opacity-normal: 1.0;
+  --FG-cards-status-opacity-hover: 1.0;
+
+  --FG-cards-button-opacity-normal: 0.0;
+  --FG-cards-button-opacity-hover: 1.0;
+
+  --FG-mutal-guilds-normal: 0.0;
+  --FG-mutal-guilds-hover: 1.0;
 }
 
 /* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
 /* ║ Dark                     ║ Here you can make some adjustments for the dark theme.                                  ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
 
+.theme-dark {
+  --FG-cards-background-normal: var(--background-secondary);
+  --FG-cards-background-hover: var(--activity-card-background);
+  --FG-cards-border-color: var(--background-modifier-accent);
+
+  --FG-cards-username-normal: var(--header-primary);
+  --FG-cards-username-hover: var(--header-primary);
+  --FG-cards-discriminator-normal: var(--header-secondary);
+  --FG-cards-discriminator-hover: var(--header-secondary);
+  --FG-cards-status-normal: var(--header-secondary);
+  --FG-cards-status-hover: var(--header-secondary);
+
+  --FG-cards-button-icon-normal: var(--interactive-active);
+  --FG-cards-button-icon-hover: var(--activity-card-background);
+  --FG-cards-button-background-normal: rgba(0, 0, 0, 0.3);
+  --FG-cards-button-background-hover: rgba(0, 0, 0, 0.6);
+}
+
 /* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
 /* ║ Light                    ║ These are the variables for the Light theme.                                            ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
+
+.theme-light {
+  --FG-cards-background-normal: var(--background-secondary);
+  --FG-cards-background-hover: var(--activity-card-background);
+  --FG-cards-border-color: var(--background-modifier-accent);
+
+  --FG-cards-username-normal: var(--header-primary);
+  --FG-cards-username-hover: var(--header-primary);
+  --FG-cards-discriminator-normal: var(--header-secondary);
+  --FG-cards-discriminator-hover: var(--header-secondary);
+  --FG-cards-status-normal: var(--header-secondary);
+  --FG-cards-status-hover: var(--header-secondary);
+
+  --FG-cards-button-icon-normal: var(--interactive-active);
+  --FG-cards-button-icon-hover: var(--activity-card-background);
+
+  --FG-button-normal: rgba(255, 255, 255, 0.3);
+  --FG-button-hover: rgba(255, 255, 255, 0.6);
+}

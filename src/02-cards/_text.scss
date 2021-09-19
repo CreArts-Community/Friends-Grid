@@ -1,0 +1,80 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Text                     ║ General                                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Spacing
+.peopleColumn-29fq28 .userInfo-2zN2z8 {
+  transform: scale(1.0);
+  width: 100%;
+  height: 100%;
+  margin-bottom: var(--FG-cards-margin-bottom);
+}
+
+.peopleColumn-29fq28#pending-tab .userInfo-2zN2z8 {
+  flex: auto 0 0;
+}
+
+// Text
+.peopleColumn-29fq28 .text-37NqbO {
+  position: absolute;
+  width: 80% !important;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+.peopleColumn-29fq28#pending-tab .text-37NqbO {
+  margin-bottom: var(--FG-cards-margin-bottom);
+  position: absolute;
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Text                     ║ Username                                                                                ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Username (Normal)
+.peopleColumn-29fq28 .username-31C1TQ {
+  color: var(--FG-cards-username-normal);
+  opacity: var(--FG-cards-username-opacity-normal);
+  }
+  
+// Username (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .username-31C1TQ {
+  color: var(--FG-cards-username-hover);
+  opacity: var(--FG-cards-username-opacity-hover);
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Text                     ║ Discriminator                                                                           ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Discriminator (Normal)
+.peopleColumn-29fq28 .discriminator-22Okc1 {
+  color: var(--FG-cards-discriminator-normal);
+  opacity: var(--FG-cards-discriminator-opacity-normal);
+  visibility: visible;
+  margin-left: 2px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+// Discriminator (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .discriminator-22Okc1 {
+  color: var(--FG-cards-discriminator-hover);
+  opacity: var(--FG-cards-discriminator-opacity-hover);
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Text                     ║ Status                                                                                  ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Status (Normal)
+.peopleColumn-29fq28 .subtext-24R4-w {
+  color: var(--FG-cards-status-normal);
+  opacity: var(--FG-cards-status-opacity-normal);
+}
+
+// Status (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .subtext-24R4-w {
+  color: var(--FG-cards-status-hover);
+  opacity: var(--FG-cards-status-opacity-hover);
+}

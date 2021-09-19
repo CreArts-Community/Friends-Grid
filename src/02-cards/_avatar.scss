@@ -1,0 +1,26 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Avatar                   ║ General                                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Avatar
+.peopleColumn-29fq28 .avatar-3W3CeO.wrapper-3t9DeA {
+    transform: scale(1.8);
+    margin-left: 36px;
+    margin-top: 40px;
+  }
+  
+  // Avatar Mask
+  .peopleColumn-29fq28 .avatar-3W3CeO::before {
+    background: var(--FG-cards-background-normal);
+    content: "";
+    position: absolute;
+    width: 116%;
+    height: 116%;
+    border-radius: 100%;
+    left: -8%;
+    top: -8%;
+  }
+  
+  .peopleColumn-29fq28 .peopleListItem-2nzedh:hover .avatar-3W3CeO::before {
+    background: var(--FG-cards-background-hover);
+  }
