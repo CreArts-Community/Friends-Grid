@@ -32,9 +32,9 @@ Friends-Grid is a theme add-on for [Discord](https://discord.com) that adds a gr
 
 You can read this repo in [other languages](.github/docs/translations.md).
 
-# Preview
-
 ![Preview](https://github.com/CorellanStoma/Friends-Grid/blob/main/assets/Preview/preview.png)
+
+![Screenshot](https://github.com/CorellanStoma/Friends-Grid/blob/main/assets/Screenshots/screenshot-001.png)   
 
 ## Features
 
