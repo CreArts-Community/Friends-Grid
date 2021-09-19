@@ -34,7 +34,7 @@ You can read this repo in [other languages](.github/docs/translations.md).
 
 # Preview
 
-![Preview](https://github.com/CorellanStoma/Friends-Grid/blob/main/.github/assets/Preview/preview.png)
+![Preview](https://github.com/CorellanStoma/Friends-Grid/blob/main/assets/Preview/preview.png)
 
 ## Features
 
