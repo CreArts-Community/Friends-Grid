@@ -71,7 +71,7 @@ The theme add-on can be customized with various variables. It's recommended to e
 
 During the creation of this theme add-on, there were some inpiration and help.
 
-* [**Powercord Community**](https://discord.gg/powercord) | inspiration, feedback and tips helped me a lot
+* [**Powercord Community**](https://discord.gg/powercord) | inspiration and feedback helped me a lot
 
 # License
 
