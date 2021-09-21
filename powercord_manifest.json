@@ -1,8 +1,8 @@
 {
     "name": "Friends-Grid",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "CorellanStoma#1996",
     "description": "Friends-Grid adds a grid view to the friends list.",
     "license": "MIT",
-    "theme": "theme.css"
+    "theme": "clients/powercord.css"
 }

@@ -1,9 +1,9 @@
 /* ╔════════════════════════════════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
-/* ║ Theme Settings                                                                                                     ║ */
+/* ║ Discord Add-on                                                                                                     ║ */
 /* ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║ Theme:                   ║ Friends-Grid                                                                            ║ */
-/* ║ version:                 ║ 1.0.1                                                                                   ║ */
-/* ║ author:                  ║ CorellanStoma#1996                                                                      ║ */
+/* ║ Version:                 ║ 1.0.2                                                                                   ║ */
+/* ║ Author:                  ║ CorellanStoma#1996                                                                      ║ */
 /* ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣ */
 /* ║                                                                                                                    ║ */
 /* ║ Friends-Grid adds a grid view to the friends list.                                                                 ║ */
@@ -20,21 +20,17 @@
 /* ⚠️ Do not touch!
 
 /* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
-/* ║ Import                   ║ Do not comment out these lines! By disabling the theme can not work correctly.          ║ */
+/* ║ SRC                      ║ Do not comment out these lines! By disabling the theme can not work correctly.          ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
 
 @import url("https://corellanstoma.github.io/Friends-Grid/src/source.css"); /* ⚠️ Do not touch! */
-
-@import url("https://corellanstoma.github.io/Friends-Grid/modules/plugins/betterdiscord.css"); /* ⚠️ Do not touch! */
-
-@import url("https://corellanstoma.github.io/Friends-Grid/modules/plugins/powercord.css"); /* ⚠️ Do not touch! */
 
 /* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */
 /* ║ General                  ║ Here you can make general adjustments.                                                  ║ */
 /* ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝ */
 
 :root {
-  --version: "v1.0.1";
+  --version: "v1.0.2";
 
   --FG-cards-radius: 8px;
   --FG-cards-height: 180px;
