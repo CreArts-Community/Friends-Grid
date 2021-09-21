@@ -22,7 +22,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 12px;
   row-gap: 12px;
-  height: auto !important;
 }
 
 // Remove Space
@@ -75,4 +74,25 @@
 }
 .peopleColumn-29fq28::-webkit-scrollbar-track {
   background-color: var(--scrollbar-auto-track);
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Info                                                                                    ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+.info-1VyQPT .size12-3cLvbJ:last-child::after {
+  content: '\a' 'Friends-Grid ' var(--version) !important;
+  text-transform: none;
+  white-space: pre;
+  user-select:  all;
+  }
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Radial Status                                                                           ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Radial Status Fix
+.userInfo-2zN2z8,
+.peopleListItem-2nzedh {
+  overflow: hidden !important;
 }

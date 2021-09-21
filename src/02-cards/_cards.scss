@@ -14,17 +14,28 @@
 // Card (Normal)
 .peopleColumn-29fq28 .peopleListItem-2nzedh {
   background: var(--FG-cards-background-normal);
-  border: var(--FG-cards-border-width) solid var(--FG-cards-border-color);
+  border: var(--FG-cards-border-width) solid var(--FG-cards-border-color-normal);
   border-radius: var(--FG-cards-radius) !important;
   height: 100% !important;
   margin: 0px;
   padding: 0px;
-  border-top: none;
-  min-height: var(--FG-cards-height) !important;
+  min-height: calc(var(--FG-cards-height) + var(--FG-cards-banner-height)) !important;
 }
 
 // Card (Hover)
-.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ,
 .peopleColumn-29fq28 .peopleListItem-2nzedh:hover{
   background: var(--FG-cards-background-hover);
+  border: var(--FG-cards-border-width) solid var(--FG-cards-border-color-hover);
+  transition: var(--transition);
+}
+
+// Card (Active)
+.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ {
+  background: var(--FG-cards-background-active) !important;
+  transition: var(--transition);
+}
+
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .peopleListItem-2nzedh {
+  position: relative;
+  bottom: 20px;
 }

@@ -2,25 +2,56 @@
 // ║ Avatar                   ║ General                                                                                 ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-// Avatar
+// Spacing
 .peopleColumn-29fq28 .avatar-3W3CeO.wrapper-3t9DeA {
-    transform: scale(1.8);
-    margin-left: 36px;
-    margin-top: 40px;
-  }
-  
-  // Avatar Mask
-  .peopleColumn-29fq28 .avatar-3W3CeO::before {
-    background: var(--FG-cards-background-normal);
-    content: "";
-    position: absolute;
-    width: 116%;
-    height: 116%;
-    border-radius: 100%;
-    left: -8%;
-    top: -8%;
-  }
-  
-  .peopleColumn-29fq28 .peopleListItem-2nzedh:hover .avatar-3W3CeO::before {
-    background: var(--FG-cards-background-hover);
-  }
+  transform: scale(1.8);
+  margin-left: 36px;
+  margin-top: calc(46px + var(--FG-cards-banner-height));
+}
+
+// Frame
+.peopleColumn-29fq28 .avatar-3W3CeO::before {
+  content: "";
+  position: fixed;
+  width: 116%;
+  height: 116%;
+  left: -8%;
+  top: -8%;
+}
+
+// Frame (Normal)
+.peopleColumn-29fq28 .avatar-3W3CeO::before {
+  background: var(--FG-cards-background-normal);
+  border-radius: var(--rs-avatar-shape, var(--FG-avatar-shape));
+  transition: var(--transition);
+}
+
+// Frame (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .avatar-3W3CeO::before {
+  background: var(--FG-cards-background-hover);
+  transition: var(--transition);
+}
+
+// Frame (Active)
+.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ .avatar-3W3CeO::before {
+  opacity: var(--FG-cards-avatar-opacity-active) !important;
+  transition: var(--transition);
+}
+
+// Avatar (Normal)
+.peopleColumn-29fq28 .avatar-3W3CeO.wrapper-3t9DeA {
+  opacity: var(--FG-cards-avatar-opacity-normal);
+  transition: var(--transition);
+}
+
+// Avatar (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .avatar-3W3CeO.wrapper-3t9DeA {
+  opacity: var(--FG-cards-avatar-opacity-hover);
+  transition: var(--transition);
+}
+
+// Avatar (Active)
+.peopleListItem-2nzedh.active-rhSpJJ .avatar-3W3CeO.wrapper-3t9DeA {
+  opacity: var(--FG-cards-avatar-opacity-active) !important;
+  transition: var(--transition);
+}
