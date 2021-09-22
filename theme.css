@@ -70,6 +70,10 @@
   --FG-avatar-shape: 50%;
 
   --transition: all 0.4s ease;
+
+  --FG-usrbg-banner-opacity-normal: 0.0;
+  --FG-usrbg-banner-opacity-hover: 1.0;
+  --FG-usrbg-banner-opacity-active: 0.0;
 }
 
 /* ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗ */

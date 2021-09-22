@@ -29,6 +29,8 @@
 
 @use "modules/plugins/powercord";  // ⚠️ Do not touch!
 
+@use "modules/addons/usrbg";  // ⚠️ Do not touch!
+
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ General                  ║ Here you can make general adjustments.                                                  ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
@@ -36,12 +38,18 @@
 :root {
   --version: "v1.0.2";
 
+  --FG-row: 1fr 1fr 1fr;
+
   --FG-cards-radius: 8px;
   --FG-cards-height: 180px;
-  --FG-cards-margin-bottom: 26px;
   --FG-cards-banner-background: var(--brand-experiment);
+  --FG-cards-margin-bottom: 26px;
   --FG-cards-banner-height: 20px;
   --FG-cards-border-width: 1px;
+
+  --FG-avatar-margin-top: 46px;
+  --FG-avatar-margin-left: 20px;
+  --FG-text-margin-left: 20px;
 
   --FG-cards-banner-opacity-normal: 1.0;
   --FG-cards-banner-opacity-hover: 1.0;

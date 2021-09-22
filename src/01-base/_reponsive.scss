@@ -24,7 +24,7 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 2000px) {
-  .peopleColumn-29fq28 > div > div {grid-template-columns: 1fr 1fr 1fr; height: auto !important;}
+  .peopleColumn-29fq28 > div > div {grid-template-columns: var(--FG-row); height: auto !important;}
 }
 
 @media screen and (min-width: 0px) and (max-width: 1600px) {

@@ -32,16 +32,15 @@ Friends-Grid is a theme add-on for [Discord](https://discord.com) that adds a gr
 
 You can read this repo in [other languages](.github/docs/translations.md).
 
-![Preview](https://github.com/CorellanStoma/Friends-Grid/blob/main/assets/Preview/preview.png)
+![Preview](https://corellanstoma.github.io/Friends-Grid/assets/Preview/preview.png)
 
-![Screenshot](https://github.com/CorellanStoma/Friends-Grid/blob/main/assets/Screenshots/screenshot-001.png)   
+![Screenshot](https://corellanstoma.github.io/Friends-Grid/assets/Screenshots/screenshot-001.png)   
 
 ## Features
 
 * Easy customization
 * Light & Dark Theme support
 * Compatible with other themes.
-* Reponsive
 
 ## Plugin Support
 
@@ -82,7 +81,7 @@ This project is licensed under the MIT License - see the license.md file for mor
 
 # Support
 
-If you need help or found some bugs just create an issue. Please use the correct templates.
+If you need help or found some bugs just create an issue.
 
 Join our Community on [**Discord**](https://discord.com/) and create a ticket.
 

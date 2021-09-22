@@ -5,8 +5,8 @@
 // Spacing
 .peopleColumn-29fq28 .avatar-3W3CeO.wrapper-3t9DeA {
   transform: scale(1.8);
-  margin-left: 36px;
-  margin-top: calc(46px + var(--FG-cards-banner-height));
+  margin-left: calc( 16px + var(--FG-avatar-margin-left));
+  margin-top: calc(var(--FG-avatar-margin-top) + var(--FG-cards-banner-height));
 }
 
 // Frame
