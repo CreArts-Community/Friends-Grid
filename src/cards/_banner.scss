@@ -1,0 +1,37 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Banner                   ║ General                                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+:root {
+  --user-accent-color: var(--FG-cards-banner-background);
+}
+
+.peopleColumn-29fq28 .userInfo-2zN2z8::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(60px + var(--FG-cards-banner-height));
+  min-height: 60px;
+  background-image: var(--user-banner);
+  background-position: center;
+  background-color: var(--user-accent-color);
+  background-size: cover;
+}
+
+// Banner (Normal)
+.peopleColumn-29fq28 .userInfo-2zN2z8::before {
+  opacity: var(--FG-cards-banner-opacity-normal);
+  transition: var(--FG-transition);
+}
+
+// Banner (Hover)
+.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .userInfo-2zN2z8::before {
+  opacity: var(--FG-cards-banner-opacity-hover);
+  transition: var(--FG-transition);
+}
+
+// Banner (Active)
+.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ .userInfo-2zN2z8::before {
+  opacity: var(--FG-cards-banner-opacity-active);
+  transition: var(--FG-transition);
+}

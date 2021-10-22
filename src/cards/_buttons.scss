@@ -1,0 +1,133 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Spacing                                                                        ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Spacing
+@mixin cards-spacing($item-id, $class, $bottom, $margin, $scale, $position:"") {
+  .peopleColumn-29fq28##{$item-id} .#{$class} {
+    position: #{$position};
+    transform: scale(#{$scale});
+    margin-left: 2px !important;
+    bottom: #{$bottom};
+    margin-right: -2px;
+    height: 0px;
+    min-height: 0px;
+    max-height: 0px;
+    margin-top: #{$margin};
+  }
+}
+
+@include cards-spacing(online-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(all-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(pending-tab, actions-FAbeWr, unset, 10px, 0.72, absolute);
+@include cards-spacing(blocked-tab, actionDeny-de_uKj, unset, 10px, 1.0, absolute);
+
+@include cards-spacing(favorized_friends-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(hidden_friends-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Background (Normal)                                                            ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Background (Normal)
+@mixin cards-background($item-id) {
+  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs {
+    background: var(--FG-cards-button-background-normal);
+    color: var(--FG-cards-button-icon-normal);
+    opacity: var(--FG-cards-button-opacity-normal);
+    transition: var(--FG-transition);
+  }
+}
+
+@include cards-background(online-tab);
+@include cards-background(all-tab);
+@include cards-background(pending-tab);
+@include cards-background(blocked-tab);
+
+@include cards-background(favorized_friends-tab);
+@include cards-background(hidden_friends-tab);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Background (Hover)                                                             ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Background (Hover)
+@mixin cards-background-hover($item-id) {
+  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+    background: var(--FG-cards-button-background-hover);
+    color: var(--FG-cards-button-icon-normal);
+    opacity: var(--FG-cards-button-opacity-hover);
+    transition: var(--FG-transition);
+  }
+}
+
+@include cards-background-hover(online-tab);
+@include cards-background-hover(all-tab);
+@include cards-background-hover(pending-tab);
+@include cards-background-hover(blocked-tab);
+
+@include cards-background-hover(favorized_friends-tab);
+@include cards-background-hover(hidden_friends-tab);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Background (Active)                                                            ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Background (Active)
+@mixin cards-background-active($item-id) {
+  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs {
+    opacity: var(--FG-cards-button-opacity-active) !important;
+    transition: var(--FG-transition);
+  }
+}
+
+@include cards-background-active(online-tab);
+@include cards-background-active(all-tab);
+@include cards-background-active(pending-tab);
+@include cards-background-active(blocked-tab);
+
+@include cards-background-active(favorized_friends-tab);
+@include cards-background-active(hidden_friends-tab);
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ Mixins - Icon (Hover)                                                                   ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Button (Hover)
+@mixin cards-button-hover($item-id) {
+  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs:hover {
+    background: var(--FG-cards-button-icon-hover) !important;
+    color:  var(--FG-cards-button-icon-hover);
+  }
+}
+
+@include cards-button-hover(online-tab);
+@include cards-button-hover(all-tab);
+@include cards-button-hover(pending-tab);
+@include cards-button-hover(blocked-tab);
+
+@include cards-button-hover(favorized_friends-tab);
+@include cards-button-hover(hidden_friends-tab);
+
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Buttons                  ║ General                                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Spacing
+.actionButton-uPB8Fs{
+  margin-left: 9px;
+}
+
+.peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj {
+  height: 26px !important;
+  width: 26px !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  margin-right: 10px;
+}
+
+.peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj .icon-35-fSh{
+  height: 14px !important;
+  width: 14px !important;
+}

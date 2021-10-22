@@ -1,0 +1,98 @@
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Friends-Grid             ║ General                                                                                 ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Header
+.peopleColumn-29fq28 .title-30qZAO {
+  position: absolute;
+  top: -56px;
+  left: -28px;
+
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--header-primary);
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+// Grid
+.peopleColumn-29fq28 > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  row-gap: 12px;
+}
+
+// Remove Space
+.peopleColumn-29fq28 > div > div [style="height: 0px;"] {
+  display: none;
+}
+
+// Spacing
+.peopleColumn-29fq28 {
+  padding-top: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+// Disable Default Scrollbar
+.peopleColumn-29fq28 .scrollerBase-289Jih {
+  overflow: visible !important;
+}
+
+// Add new scrollbar
+.peopleColumn-29fq28 {
+  display: block;
+  overflow: hidden scroll;
+}
+
+// Scrollbar
+.peopleColumn-29fq28::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+.peopleColumn-29fq28::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.peopleColumn-29fq28::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-auto-thumb);
+  min-height: 40px;
+}
+.peopleColumn-29fq28::-webkit-scrollbar-thumb,
+.peopleColumn-29fq28::-webkit-scrollbar-track {
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: var(--FG-cards-radius);
+}
+.peopleColumn-29fq28::-webkit-scrollbar-thumb,
+.peopleColumn-29fq28::-webkit-scrollbar-track {
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  border-radius: var(--FG-cards-radius);
+}
+.peopleColumn-29fq28::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-auto-track);
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Info                                                                                    ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+.info-1VyQPT .size12-3cLvbJ:last-child::after {
+  content: '\a' 'Friends-Grid ' var(--FA-version) !important;
+  text-transform: none;
+  white-space: pre;
+  user-select:  all;
+  }
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Radial Status                                                                           ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+// Radial Status Fix
+.userInfo-2zN2z8,
+.peopleListItem-2nzedh {
+  overflow: hidden !important;
+}

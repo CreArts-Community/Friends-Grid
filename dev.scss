@@ -2,7 +2,7 @@
 // ║ Discord Add-on                                                                                                     ║
 // ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣
 // ║ Theme:                   ║ Friends-Grid                                                                            ║
-// ║ Version:                 ║ 1.0.2                                                                                   ║
+// ║ Version:                 ║ 1.0.4                                                                                   ║
 // ║ Author:                  ║ CorellanStoma#1996                                                                      ║
 // ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣
 // ║                                                                                                                    ║
@@ -23,20 +23,20 @@
 // ║ SRC                      ║ Do not comment out these lines! By disabling the theme can not work correctly.          ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-@use "src/source"; // ⚠️ Do not touch!
+@use "src/source";
 
-@use "modules/plugins/betterdiscord";  // ⚠️ Do not touch!
+@use "modules/plugins/betterdiscord";
 
-@use "modules/plugins/powercord";  // ⚠️ Do not touch!
+@use "modules/plugins/powercord";
 
-@use "modules/addons/usrbg";  // ⚠️ Do not touch!
+//@use "modules/addons/usrbg";
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ General                  ║ Here you can make general adjustments.                                                  ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 :root {
-  --version: "v1.0.2";
+  --FA-version: "v1.0.4";
 
   --FG-row: 1fr 1fr 1fr;
 
@@ -81,7 +81,7 @@
 
   --FG-avatar-shape: 50%;
 
-  --transition: all 0.4s ease;
+  --FG-transition: all 0.4s ease;
 }
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
