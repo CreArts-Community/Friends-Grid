@@ -61,20 +61,11 @@ The theme add-on can be customized with various variables. It's recommended to e
 |[Customization](https://github.com/CorellanStoma/Friends-Grid/blob/main/.github/docs/03-customizazion/english.md)|
 |---|
 
-
-
 # License
 
 This project is licensed under the MIT license - see the license file for more details.
 
 |[Show License](https://github.com/CorellanStoma/Friends-Grid/blob/main/license)|
-|---|
-
-# Contributing
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-
-|[Contributing]()|
 |---|
 
 # Support
