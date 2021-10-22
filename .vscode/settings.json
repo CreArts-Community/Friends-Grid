@@ -10,7 +10,7 @@
    "liveSassCompile.settings.excludeList": [
     "/.VSCodeCounter/**",
     "/.vscode/**",
-    "/theme.scss",
+    "/dev.scss",
    ],
 
    "liveSassCompile.settings.generateMap": false,
