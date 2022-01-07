@@ -2,7 +2,7 @@
 // ║ Discord Add-on                                                                                                     ║
 // ╠══════════════════════════╦═════════════════════════════════════════════════════════════════════════════════════════╣
 // ║ Theme:                   ║ Friends-Grid                                                                            ║
-// ║ Version:                 ║ 1.0.4                                                                                   ║
+// ║ Version:                 ║ 1.0.5                                                                                   ║
 // ║ Author:                  ║ CorellanStoma#1996                                                                      ║
 // ╠══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╣
 // ║                                                                                                                    ║
@@ -23,22 +23,22 @@
 // ║ SRC                      ║ Do not comment out these lines! By disabling the theme can not work correctly.          ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-@use "src/source";
+@use "src/source"; // ⚠️ Warning!! Do not disable it!
 
-@use "modules/plugins/betterdiscord";
+@use "modules/plugins/powercord"; // ⚠️ Warning!! Do not disable it!
 
-@use "modules/plugins/powercord";
-
-//@use "modules/addons/usrbg";
+@use "modules/plugins/betterdiscord"; // ⚠️ Warning!! Do not disable it!
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ General                  ║ Here you can make general adjustments.                                                  ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 :root {
-  --FA-version: "v1.0.4";
+  --FA-version: "v1.0.5";
 
   --FG-row: 1fr 1fr 1fr;
+
+  --FG-search-radius: 8px;
 
   --FG-cards-radius: 8px;
   --FG-cards-height: 180px;
@@ -89,6 +89,8 @@
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 .theme-dark {
+  --FG-search-background: var(--background-tertiary);
+
   --FG-cards-background-normal: var(--background-secondary);
   --FG-cards-background-hover: var(--activity-card-background);
 
@@ -115,6 +117,8 @@
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 .theme-light  {
+  --FG-search-background: var(--background-tertiary);
+
   --FG-cards-background-normal: var(--background-secondary);
   --FG-cards-background-hover: var(--activity-card-background);
 

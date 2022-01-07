@@ -5,7 +5,7 @@
 // Header
 .peopleColumn-29fq28 .title-30qZAO {
   position: absolute;
-  top: -56px;
+  top: -110px;
   left: -28px;
 
   font-weight: 700;
@@ -31,7 +31,7 @@
 
 // Spacing
 .peopleColumn-29fq28 {
-  padding-top: 56px;
+  padding-top: 110px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -95,4 +95,18 @@
 .userInfo-2zN2z8,
 .peopleListItem-2nzedh {
   overflow: hidden !important;
+}
+
+// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
+// ║ Base                     ║ Searchbar                                                                               ║
+// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+.peopleColumn-29fq28 .searchBar-3Ek5LB {
+  position: absolute;
+  background: var(--FG-search-background);
+  z-index: 9;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  border-radius: var(--FG-search-radius);
+  top: -54px;
 }
