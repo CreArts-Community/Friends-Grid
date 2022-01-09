@@ -4,7 +4,7 @@
 
 // Spacing
 @mixin cards-spacing($item-id, $class, $bottom, $margin, $scale, $position:"") {
-  .peopleColumn-29fq28##{$item-id} .#{$class} {
+  .peopleColumn-1wMU14##{$item-id} .#{$class} {
     position: #{$position};
     transform: scale(#{$scale});
     margin-left: 2px !important;
@@ -17,13 +17,13 @@
   }
 }
 
-@include cards-spacing(online-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
-@include cards-spacing(all-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
-@include cards-spacing(pending-tab, actions-FAbeWr, unset, 10px, 0.72, absolute);
-@include cards-spacing(blocked-tab, actionDeny-de_uKj, unset, 10px, 1.0, absolute);
+@include cards-spacing(online-tab, actions-YHvpIT, 95%, unset, 0.72, relative);
+@include cards-spacing(all-tab, actions-YHvpIT, 95%, unset, 0.72, relative);
+@include cards-spacing(pending-tab, actions-2ZgdH4, unset, 10px, 0.72, absolute);
+@include cards-spacing(blocked-tab, actionDeny-1pQVuZ, unset, 10px, 1.0, absolute);
 
-@include cards-spacing(favorized_friends-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
-@include cards-spacing(hidden_friends-tab, actions-1SQwjn, 95%, unset, 0.72, relative);
+@include cards-spacing(favorized_friends-tab, actions-YHvpIT, 95%, unset, 0.72, relative);
+@include cards-spacing(hidden_friends-tab, actions-YHvpIT, 95%, unset, 0.72, relative);
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Buttons                  ║ Mixins - Background (Normal)                                                            ║
@@ -31,7 +31,7 @@
 
 // Background (Normal)
 @mixin cards-background($item-id) {
-  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs {
+  .peopleColumn-1wMU14##{$item-id} .actionButton-3-B2x- {
     background: var(--FG-cards-button-background-normal);
     color: var(--FG-cards-button-icon-normal);
     opacity: var(--FG-cards-button-opacity-normal);
@@ -53,7 +53,7 @@
 
 // Background (Hover)
 @mixin cards-background-hover($item-id) {
-  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+  .peopleColumn-1wMU14##{$item-id} .peopleListItem-u6dGxF:hover .actionButton-3-B2x- {
     background: var(--FG-cards-button-background-hover);
     color: var(--FG-cards-button-icon-normal);
     opacity: var(--FG-cards-button-opacity-hover);
@@ -75,7 +75,7 @@
 
 // Background (Active)
 @mixin cards-background-active($item-id) {
-  .peopleColumn-29fq28##{$item-id} .peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs {
+  .peopleColumn-1wMU14##{$item-id} .peopleListItem-u6dGxF.active-2UF8Zh .actionButton-3-B2x- {
     opacity: var(--FG-cards-button-opacity-active) !important;
     transition: var(--FG-transition);
   }
@@ -95,7 +95,7 @@
 
 // Button (Hover)
 @mixin cards-button-hover($item-id) {
-  .peopleColumn-29fq28##{$item-id} .actionButton-uPB8Fs:hover {
+  .peopleColumn-1wMU14##{$item-id} .actionButton-3-B2x-:hover {
     background: var(--FG-cards-button-icon-hover) !important;
     color:  var(--FG-cards-button-icon-hover);
   }
@@ -115,11 +115,11 @@
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
 // Spacing
-.actionButton-uPB8Fs{
+.actionButton-3-B2x-{
   margin-left: 9px;
 }
 
-.peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj {
+.peopleColumn-1wMU14#blocked-tab .actionDeny-1pQVuZ {
   height: 26px !important;
   width: 26px !important;
   min-height: unset !important;
@@ -127,7 +127,7 @@
   margin-right: 10px;
 }
 
-.peopleColumn-29fq28#blocked-tab .actionDeny-de_uKj .icon-35-fSh{
+.peopleColumn-1wMU14#blocked-tab .actionDeny-1pQVuZ .icon-1WVg4I{
   height: 14px !important;
   width: 14px !important;
 }

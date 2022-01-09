@@ -6,7 +6,7 @@
   --user-accent-color: var(--FG-cards-banner-background);
 }
 
-.peopleColumn-29fq28 .userInfo-2zN2z8::before {
+.peopleColumn-1wMU14 .userInfo-2WpsYG::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -19,19 +19,19 @@
 }
 
 // Banner (Normal)
-.peopleColumn-29fq28 .userInfo-2zN2z8::before {
+.peopleColumn-1wMU14 .userInfo-2WpsYG::before {
   opacity: var(--FG-cards-banner-opacity-normal);
   transition: var(--FG-transition);
 }
 
 // Banner (Hover)
-.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .userInfo-2zN2z8::before {
+.peopleColumn-1wMU14 .peopleListItem-u6dGxF:hover .userInfo-2WpsYG::before {
   opacity: var(--FG-cards-banner-opacity-hover);
   transition: var(--FG-transition);
 }
 
 // Banner (Active)
-.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ .userInfo-2zN2z8::before {
+.peopleColumn-1wMU14 .peopleListItem-u6dGxF.active-2UF8Zh .userInfo-2WpsYG::before {
   opacity: var(--FG-cards-banner-opacity-active);
   transition: var(--FG-transition);
 }
