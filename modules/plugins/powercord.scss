@@ -15,30 +15,30 @@
 }
 
 // Hight Fix
-.peopleList-3c4jOR {padding-top: 0px !important;}
+.peopleList-2VBrVI {padding-top: 0px !important;}
 
 
 // Guild Icons
-.iconContainer-24L2fh {
+.iconContainer-2fWS7c {
   transform: scaleX(-1) scale(1.06)!important;
   background: transparent;
   padding: 0px 0px 0px 10px;
 }
 
 // Guild (Normal)
-.peopleColumn-29fq28 .bfl-mutualGuilds {
+.peopleColumn-1wMU14 .bfl-mutualGuilds {
   opacity: var(--FG-mutal-guilds-normal);
   transition: var(--transition);
 }
 
 // Guild (Hover)
-.peopleColumn-29fq28 .peopleListItem-2nzedh:hover .bfl-mutualGuilds {
+.peopleColumn-1wMU14 .peopleListItem-u6dGxF:hover .bfl-mutualGuilds {
   opacity: var(--FG-mutal-guilds-hover);
   transition: var(--transition);
 }
 
 // Guild (Active)
-.peopleColumn-29fq28 .peopleListItem-2nzedh.active-rhSpJJ .bfl-mutualGuilds {
+.peopleColumn-1wMU14 .peopleListItem-u6dGxF.active-2UF8Zh .bfl-mutualGuilds {
   opacity: var(--FG-mutal-guilds-active);
   transition: var(--transition);
 }
