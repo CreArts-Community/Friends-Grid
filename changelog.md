@@ -1,13 +1,14 @@
 # v1.0.5
-
-* adding searchbar support
+* Added support for the search bar
 
 # v1.0.6
-
-* Fixing bugs from the last update.
+* Fixed bugs from the last update.
 
 # v1.0.7
+* Changed file structure.
+* Fixed empty Image bug.
+* Removed USRBG code.
 
-* Structure changes.
-* Fixing the empty Image.
-* removed USRBG test code.
+# v1.0.8
+* Fixed Searchbar bug.
+* Fixed Grid bug.

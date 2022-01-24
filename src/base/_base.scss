@@ -16,7 +16,7 @@
 }
 
 // Grid
-.peopleColumn-1wMU14 .peopleList-2VBrVI .content-2a4AW9 {
+.peopleColumn-1wMU14 .peopleList-2VBrVI > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 12px;
@@ -28,14 +28,18 @@
   display: none;
 }
 
-// Spacing
+// Spacing (Big Small List)
 .peopleColumn-1wMU14 {
-  padding-top: 110px;
+  padding-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
 }
 
+// Spacing (Big Friend List)
+.peopleColumn-1wMU14 .content-2a4AW9 {
+  margin-top: 40px;
+}
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Base                     ║ Scrollbar                                                                               ║
@@ -94,25 +98,14 @@
   text-transform: none;
   white-space: pre;
   user-select:  all;
-  }
-
-/*
-// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Base                     ║ Radial Status                                                                           ║
-// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
-
-// Radial Status Fix
-.userInfo-2WpsYG,
-.peopleListItem-u6dGxF {
-  overflow: hidden !important;
 }
-*/
 
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Base                     ║ Searchbar                                                                               ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-.peopleColumn-1wMU14 .searchBar-2aylmZ {
+// (Big Friend List)
+.peopleColumn-1wMU14 .content-2a4AW9 .searchBar-2aylmZ {
   position: absolute;
   background: var(--FG-search-background);
   z-index: 9;
@@ -120,4 +113,15 @@
   width: 100%;
   border-radius: var(--FG-search-radius);
   top: -54px;
+}
+
+// (Big Small List)
+.peopleColumn-1wMU14 .searchBar-2aylmZ {
+  position: relative;
+  background: var(--FG-search-background);
+  z-index: 9;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  border-radius: var(--FG-search-radius);
+  top: -12px;
 }
