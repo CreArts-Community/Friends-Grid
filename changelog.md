@@ -12,3 +12,6 @@
 # v1.0.8
 * Fixed Searchbar bug.
 * Fixed Grid bug.
+
+# v1.0.9
+* Fixed Title bug.
