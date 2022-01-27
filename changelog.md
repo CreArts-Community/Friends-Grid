@@ -15,3 +15,6 @@
 
 # v1.0.9
 * Fixed Title bug.
+
+# v1.0.10
+* Fixed new Title bug.

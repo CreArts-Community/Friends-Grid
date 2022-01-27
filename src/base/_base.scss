@@ -2,17 +2,29 @@
 // ║ Friends-Grid             ║ General                                                                                 ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
 
-// Header
+// Title
 .peopleColumn-1wMU14 .title-x4dI75 {
-  position: absolute;
-  top: 10px;
-  left: -10px;
+  position: relative;
+  top: -66px;
+  left: 0px;
   font-weight: 700;
   font-family: var(--font-display);
   color: var(--header-primary);
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+  margin-left: 0px;
+}
+
+// Searchbar
+.peopleColumn-1wMU14 .searchBar-2aylmZ {
+  position: relative;
+  background: var(--FG-search-background);
+  z-index: 9;
+  margin: 0px;
+  width: 100%;
+  border-radius: var(--FG-search-radius);
+  top: 24px;
 }
 
 // Grid
@@ -30,7 +42,7 @@
 
 // Spacing
 .peopleColumn-1wMU14 {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -39,6 +51,9 @@
 // ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
 // ║ Base                     ║ Scrollbar                                                                               ║
 // ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
+
+
+
 
 // Disable Default Scrollbar
 .peopleColumn-1wMU14 .scrollerBase-_bVAAt {
@@ -51,11 +66,13 @@
   overflow: hidden scroll;
 }
 
+
 // Scrollbar
 .peopleColumn-1wMU14::-webkit-scrollbar {
   width: 16px;
   height: 16px;
 }
+
 
 .peopleColumn-1wMU14::-webkit-scrollbar-corner {
   background-color: transparent;
@@ -93,30 +110,4 @@
   text-transform: none;
   white-space: pre;
   user-select:  all;
-}
-
-// ╔══════════════════════════╦═════════════════════════════════════════════════════════════════════════════[─]═[□]═[×]═╗
-// ║ Base                     ║ Searchbar                                                                               ║
-// ╚══════════════════════════╩═════════════════════════════════════════════════════════════════════════════════════════╝
-
-// (Big Friend List)
-.peopleColumn-1wMU14 .content-2a4AW9 .searchBar-2aylmZ {
-  position: absolute;
-  background: var(--FG-search-background);
-  z-index: 9;
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  border-radius: var(--FG-search-radius);
-  top: -54px;
-}
-
-// (Big Small List)
-.peopleColumn-1wMU14 .searchBar-2aylmZ {
-  position: relative;
-  background: var(--FG-search-background);
-  z-index: 9;
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  border-radius: var(--FG-search-radius);
-  top: -12px;
 }
